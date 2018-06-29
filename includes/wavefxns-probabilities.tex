@@ -1,0 +1,57 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+%
+% The current source for these materials is accessible on Github: https://github.com/jlaaser/quantum-exercises
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Wavefunctions and Probabilities\sectionmark{Wavefunctions and Probabilities}}
+	
+	If $\ket{\Psi} = \sum_i c_i \ket{i}$, where the $\{\ket{i}\}$ are the eigenstates of operator $\hat\Omega$, then
+	\begin{align*}
+		\braket{\Psi|\hat\Omega|\Psi} &= \left(\sum_i c_i^* \bra{i}\right) \hat\Omega \left(\sum_j c_j \ket{j}\right)\\
+			&= \sum_i |c_i|^2 \omega_i
+	\end{align*}
+	(You will prove this on your first homework set.)
+	
+	\begin{questions}
+	
+		\question This has a similar form to a weighted average, e.g.
+			\begin{equation*}
+				\left\langle \omega \right\rangle = \sum_i P_i \omega_i
+			\end{equation*}
+			where $P_i$ is the probability of measuring value $\omega_i$. 
+			In this context, how would you interpret $|c_i|^2$?
+			
+			\begin{solution}[1in]
+			\end{solution}
+			
+		\question Remember that you can find $c_i$ by calculating $\braket{i|\Psi}$. Given this, how would you interpret the value of $\left|\braket{i|\Psi}\right|^2$?
+			
+			\begin{solution}[1in]
+			\end{solution}
+		
+		\question A particularly useful set of eigenstates are the eigenstates of the position operator, $\hat x$, where eigenstate $\ket{x_1}$ corresponds to the eigenstate in which we measure the position of the particle as being exactly at $x=x_1$ and nowhere else.
+		
+			In this context, how would you interpret the value of $|\braket{x_1|\Psi}|^2$?
+			
+			\begin{solution}[1.75in]
+			\end{solution}
+			\begin{flushright}(Continued on back of page $\rightarrow$)	\end{flushright}
+		
+		\newpage
+		\question More generally, how would you interpret the function $|\Psi(x)|^2$ where $\Psi(x) = \braket{x|\Psi}$?
+		
+			\begin{solution}[2in]
+			\end{solution}
+			
+		\question What should have to be true about the value of $\int_{-\infty}^{\infty} dx\, |\Psi(x)|^2$?
+		
+			\emph{Hint: what should the total probability of finding the particle \emph{somewhere} along the x axis be?}
+		
+			\begin{solution}
+			\end{solution}
+		
+	\end{questions}
+	

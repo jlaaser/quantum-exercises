@@ -1,0 +1,58 @@
+\section*{First-Order Perturbation Theory\sectionmark{First-Order Perturbation Theory}}
+
+	For a perturbed Hamiltonian, $\hat H = \hat H^{(0)} + \lambda \hat H^{(1)}$, we can write the full solutions to the Schr\"odinger equation as expansions of the form
+	\begin{align*}
+		E_n = E_n^{(0)} + \lambda E_n^{(1)} + \lambda^2 E_n^{(2)} + \dots & & \ket{n} = \ket{n^{(0)}} + \lambda\ket{n^{(1)}} + \lambda^2 \ket{n^{(2)}} + \dots
+	\end{align*}
+	In this set of exercises, we'll consider a simplified version of this problem where only keep terms that are zeroth and first order in $\lambda$, e.g.
+	\begin{align*}
+		E_n \approx E_n^{(0)} + \lambda E_n^{(1)} & & \ket{n} \approx \ket{n^{(0)}} + \lambda\ket{n^{(1)}}
+	\end{align*}
+
+	\begin{questions}
+	
+		\question 
+		\begin{parts}
+			\part Substitute the above expressions for $\hat H$, $\ket n$, and $E_n$ into the Schr\"odinger equation ($\hat H \ket{n} = E_n\ket{n}$) and multiply out both sides of the resulting equation.
+			
+				\begin{solution}[3in]
+				\end{solution}
+		
+			\part If $\lambda=0$, what equation results?  Discuss, in your group, why this makes physical sense.
+			
+				\begin{solution}[1.25in]
+				\end{solution}
+		
+			\part When $\lambda \neq 0$, the only way for the equation to hold is if the term(s) on the left side that scale as $\lambda^a$ are equal to the term(s) on the right side that scale as $\lambda^a$.  What equation results if you require this to be true for $a=1$, i.e. the terms that scale as $\lambda$?
+			
+		\end{parts}
+		
+		\newpage
+		\question If we overlap both sides of this equation with $\bra{n^{(0)}}$, we obtain
+				\begin{align*}
+					\underbrace{\braket{n^{(0)}|H^{(1)}|n^{(0)}}}_A + \underbrace{\braket{n^{(0)}|\hat H ^{(0)}|n^{(1)}}}_B = \underbrace{\braket{n^{(0)}|E_n^{(1)}|n^{(0)}}}_C + \underbrace{\braket{n^{(0)}|E_n^{(0)}|n^{(1)}}}_D
+				\end{align*}
+		\begin{parts}
+			\part Term $C$ is easy to simplify, as long as we require that the zeroth-order states (the $\ket{n^{(0)}}$) are orthonormal.  If this is true, what is term $C$ equal to?
+			
+				\begin{solution}[1.25in]
+				\end{solution}
+			
+			\part We usually also require that the first-order corrections are orthogonal to the zeroth-order states, e.g. $\braket{n^{(0)}|n^{(1)}}=0$ (this requirement is called \emph{intermediate} normalization). If this is true, how can you simplify term $D$?
+			
+				\begin{solution}[1.25in]
+				\end{solution}
+			
+			\part Term $B$ is trickier, but if we remember that $\hat H^{(0)}$ is Hermitian, we can rewrite it as $\braket{n^{(0)}|\hat H ^{(0)}|n^{(1)}} = \braket{n^{(1)}|\hat H ^{(0)}|n^{(0)}}^*$. Using this trick, and remembering that $\hat H ^{(0)}\ket{n^{(0)}} = E_n^{(0)}\ket{n^{(0)}}$, how can you simplify this term?
+			
+				\begin{solution}[1.75in]
+				\end{solution}
+			
+			\part Substitute your answers to parts a-c in to the equation at the top of the page. In your group, discuss what the resulting equation tells you about the relationship between the zeroth-order states and the first-order corrections to the energy and Hamiltonian.
+			
+				\begin{solution}[1.25in]
+				\end{solution}
+		\end{parts}
+	
+	\end{questions}
+	

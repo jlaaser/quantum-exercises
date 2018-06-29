@@ -1,0 +1,58 @@
+\section*{Symmetry with Respect to Exchange\sectionmark{Exchange Symmetry}}
+
+	\begin{questions}
+	
+		\question The permutation operator, $\hat P_{12}$, swaps particles one and 2, e.g. $\hat P_{12} \psi(q_1,q_2) = \psi(q_2,q_1)$.
+		
+			\begin{parts}
+				\part If we apply the permutation operator twice, what should we get? In other words, what is $\hat P_{12}^2 \psi(q_1,q_2)$?
+				
+					\begin{solution}[1.5in]
+					\end{solution}
+				
+				\part If particles 1 and 2 are indistinguishable, then swapping them should give the same state, up to a constant.  That is, $\psi(q_2,q_1) = c\psi(q_1,q_2)$.
+				
+				Convince yourself that this means that $\hat P_{12}^2\psi(q_1,q_2) = c^2 \psi(q_1,q_2)$.  In conjunction with your answer to part (a), what does this tell you about the value of $c$?
+				
+					\begin{solution}[2in]
+					\end{solution}
+				
+				\part Suppose $c=-1$.  What happens if the two particles are at the same spatial coordinates, i.e. $q_1=q_2$?  \emph{(Hint: start with $\psi(q_1,q_1) = -\psi(q_1,q_1)$ and solve for $\psi(q_1,q_1)$).}
+				
+					\begin{solution}[2.5in]
+					\end{solution}
+				
+			\end{parts}
+			
+		\contdnewpg
+		
+		\question When $c=1$, we say that the wavefunction is \emph{symmetric} with respect to exchange, while when $c=-1$, we say it is \emph{antisymmetric} with respect to exchange.%Before we learned about spin, we wrote the ground state of the helium atom as $\psi(1,2) = 1s(1)1s(2)$.
+		
+			With this in mind, let's consider the ground state of the helium atom, this time including spin:
+			
+			\begin{parts}
+			
+				\part One way we could incorporate spin is simply to multiply the spatial wavefunction $1s(1)1s(2)$ by spin functions $\alpha(1)$, $\beta(2)$, etc.  If we do this, four possible descriptions of helium's ground state are:
+				
+					\begin{enumerate}[itemsep=12pt,topsep=12pt]
+						\item $1s(1)\alpha(1)1s(2)\alpha(2)$
+						\item $1s(1)\alpha(1)1s(2)\beta(2)$
+						\item $1s(1)\beta(1)1s(2)\alpha(2)$
+						\item $1s(1)\beta(1)1s(2)\beta(2)$
+					\end{enumerate}
+					
+					%\vspace{6pt}
+					In the space to the right, above, identify each of these wavefunctions as symmetric with respect to exchange of electrons 1 and 2, antisymmetric with respect to exchange, or neither.
+					
+					\vspace{12pt}
+				\part Another way we could construct the ground state of the helium atom is using the determinant
+					\begin{equation*}
+						\psi(1,2) = \frac{1}{\sqrt{2}}\begin{vmatrix}1s(1)\alpha(1) & 1s(1)\beta(1) \\ 1s(2)\alpha(2) & 1s(2)\beta(2)\end{vmatrix}
+					\end{equation*}
+					Is this wavefunction symmetric or antisymmetric with respect to exchange?
+					
+					\emph{Hint: you can do this by multiplying the determinant out, but there is also a more elegant way to get to the answer - what happens to the determinant of a matrix if you swap two rows or two columns?}
+				
+			\end{parts}
+	
+\end{questions}

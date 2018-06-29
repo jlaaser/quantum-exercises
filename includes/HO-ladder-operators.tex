@@ -1,0 +1,82 @@
+\section*{A Few Special Operators\sectionmark{Harmonic Oscillator Operators}}
+
+	In this set of exercises, we will look at the raising and lowering operators and their affect on eigenstates of the harmonic oscillator.
+
+	\begin{questions}
+	
+		\question We showed that we can write the dimensionless Hamiltonian for the harmonic oscillator as 
+			\begin{equation*}
+				\hat h = \adag \hat a + \frac{1}{2}
+			\end{equation*}
+			This is just an operator ($\hat N = \adag \hat a$) plus a constant ($c = \frac{1}{2}$).
+			
+			\begin{parts}
+				\part Suppose $\ket{n}$ is an eigenstate of $\hat N$ with eigenvalue $n$, i.e. $\hat N \ket{n} = n\ket{n}$. Is $\ket{n}$ also an eigenstate of $\hat h$?
+				
+					\begin{solution}[2.5in]
+					\end{solution}
+				
+				\part How are the eigenvalues of $\ket{n}$ under $\hat N$ and $\hat h$ related?
+				
+					\begin{solution}[1.5in]
+					\end{solution}
+				
+				\part Why does this mean we can solve the harmonic oscillator simply by finding the eigenstates of $\adag \hat a$?
+				
+					\begin{solution}[1.75in]
+					\end{solution}
+				
+			\end{parts}
+
+		\contdnewpg
+		\question Now, let's consider what eigenvalue we would get from $\hat N$ if our starting state were $\hat a \ket{n}$.  We can write
+			\begin{align*}
+				\hat N(\hat a \ket{n}) &= (\adag \hat a)\hat a \ket{n} && \text{use definition of $\hat N$} \\
+				 &= (\hat a \adag - 1)\hat a \ket{n} && \text{use }[\hat a,\adag] = 1 \\
+				 &= (\hat a \adag \hat a - \hat a)\ket{n} && \text{distribute}\\
+				 &= \hat a(\adag \hat a - 1)\ket{n} && \text{``reverse'' distribute}\\
+				 &= \hat a(\hat N - 1)\ket{n} && \text{use definition of $\hat N$}\\
+				 &= \hat a (n-1) \ket{n} && \text{use $\hat N \ket{n} = n\ket{n}$}\\
+				 &= (n-1)(\hat a \ket{n})
+			\end{align*}
+			\begin{parts}
+				\part Explain why this means $\hat a \ket{n}$ is also an eigenstate of $\hat N$.  What is its eigenvalue?
+				
+					\begin{solution}[2in]
+					\end{solution}
+				
+				\part Explain why this might let us write $\hat a \ket{n} = c_n \ket{n-1}$.
+				
+					\begin{solution}[2in]
+					\end{solution}
+					
+				\part Why might we call $\hat a$ a ``lowering'' operator?
+				
+					\begin{solution}[1.5in]
+					\end{solution}
+				
+			\end{parts}
+			
+		\contdnewpg
+		\question Now, we need to find the coefficient $c_n$.
+		
+			\begin{parts}
+				\part If $\ket{n}$ is normalized, then what is $\braket{n|\hat N|n}$?
+				
+					\begin{solution}[2in]
+					\end{solution}
+				
+				\part $\braket{n|\hat N|n}$ can also be written as $\braket{n|\adag \hat a|n}$.
+				
+					If $\hat a \ket{n} = c_n \ket{n-1}$, then $\bra{n}\adag = c_n^* \bra{n-1}$. Using this fact, and remembering that $\hat N = \adag \hat a$, calculate $\braket{n|\hat N|n}$ in terms of $c_n$.
+				
+					\begin{solution}[3in]
+					\end{solution}
+					
+				\part Set your answers to the preceding two parts equal. Solve for $c_n$, and fill in the blank in the following expression:
+					\begin{equation*}
+						\hat a \ket{n} = \answerbox{30}\ket{n-1}
+					\end{equation*}
+			\end{parts}
+	\end{questions}
+	

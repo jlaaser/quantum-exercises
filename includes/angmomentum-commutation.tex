@@ -1,0 +1,61 @@
+\section*{Some Properties of the Angular Momentum Operators\sectionmark{Commutation of Angular Momentum Operators}}
+
+	In this set of exercises, we will look at commutation relationships of the angular momentum operators.  For this set of exercises, you'll find it useful to remember that the operator forms of $L_x$, $L_y$, and $L_z$ are given by
+			\begin{align*}
+				\hat L_x = \hat y \hat p_z - \hat z \hat p_y & &
+				\hat L_y = \hat z \hat p_x - \hat x \hat p_z & &
+				\hat L_z = \hat x \hat p_y - \hat y \hat p_x
+			\end{align*}
+
+	\begin{questions}
+	
+		\question If we calculate the commutator between $\hat L_x$ and $\hat L_y$, we find
+			\begin{align*}
+				[\hat L_x, \hat L_y] &= [\hat y \hat p_z-\hat z \hat p_y , \hat z \hat p_x - \hat x \hat p_z] \\
+					&= [\hat y \hat p_z, \hat z \hat p_x] - [\hat y \hat p_z, \hat x \hat p_z] - [\hat z \hat p_y, \hat z \hat p_x] + [\hat z \hat p_y, \hat x \hat p_z]
+			\end{align*}
+			\begin{parts}
+				\part Two of the commutators in the last line go to zero.  Which ones are they, and why are they zero?
+				
+					\begin{solution}[1.5in]
+					\end{solution}
+				
+				\part The remaining two commutators simplify to $-i\hbar \hat y \hat p_x$ and $i\hbar \hat x \hat p_y$.  Which one is which?  Can you justify why they have these values?
+				
+					\begin{solution}[1.5in]
+					\end{solution}
+				
+				\part Combine your answers to the previous two parts to find an expression for $[\hat L_x,\hat L_y]$. Your result will be proportional to either $\hat L_x$, $\hat L_y$, or $\hat L_z$ - which one is it, and what is the proportionality constant?
+				
+					\begin{solution}[1.5in]
+					\end{solution}
+			\end{parts}
+
+		\contdnewpg
+		
+		We can generalize the results from the previous page to yield
+		\begin{align*}
+			[\hat L_x, \hat L_y] = i\hbar \hat L_z & & [\hat L_y, \hat L_z] = i\hbar \hat L_x & & [\hat L_z, \hat L_x] = i\hbar \hat L_y
+		\end{align*}
+		
+		\question 
+		
+			\begin{parts}
+				\part Can we measure two different components of the angular momentum simultaneously or not?
+				
+					\begin{solution}[1.5in]
+					\end{solution}
+			
+				\part  The \emph{square magnitude} of the angular momentum is given by $\hat L^2 = \hat L_x^2 + \hat L_y^2 + \hat L_z^2$. Do $\hat L^2$ and $\hat L_z$ commute?
+				
+					\emph{You'll find it useful to remember that $[\hat A^2,\hat B] = \hat A[\hat A, \hat B] + [\hat A, \hat B]\hat A$}
+				
+					\begin{solution}[3.5in]
+					\end{solution}
+				
+				\part Based on your result from part (b), can we measure the magnitude of the angular momentum and at least one of its components simultaneously or not?
+			\end{parts}
+		
+	\end{questions}
+	
+	

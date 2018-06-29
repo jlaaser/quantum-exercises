@@ -1,0 +1,62 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+%
+% The current source for these materials is accessible on Github: https://github.com/jlaaser/quantum-exercises
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Time-Evolution of the Wavefunction\sectionmark{Time Evolution}}
+
+	We can describe the time-evolution of a quantum state $\ket{\Psi}$ using the time-evolution operator $\hat U (t)$, which relates the state of the system at time $t=t_1$ to the state of the system at time $t=0$ by
+	\begin{equation*}
+		\ket{\Psi(t=t_1)} = \hat U(t_1) \ket{\Psi(t=0)}
+	\end{equation*}
+	$\hat U(t)$ is given by 
+	\begin{equation*}
+		\hat U(t) = e^{i\hat H t/\hbar}
+	\end{equation*}
+	where $\hat H$ is the Hamiltonian operator corresponding to the total energy of the system.
+	
+	\begin{questions}
+	
+		\vspace{0.2in}
+		\question If $\ket{n}$ is an eigenstate of $\hat H$, then
+			\begin{equation*}
+				\hat H\ket{n} = E_n\ket{n}
+			\end{equation*}	
+			where $E_n$ is the total energy of a system in eigenstate $\ket{n}$.
+			
+			Using this information, fill in the blanks for the following expressions:
+			
+			\begin{align*}
+				\hat H^2\ket{n} = \hat H \left(\hat H \ket{n}\right) =  \raisebox{-2ex}{\framebox(60,30){}} & & \hat H^3 \ket{n} =   \raisebox{-2ex}{\framebox(60,30){}} & & \hat H^i \ket{n} =  \raisebox{-2ex}{\framebox(60,30){}}
+			\end{align*}
+			
+			\vspace{0.1in}
+		\question Applying $\hat U(t)$ directly to $\ket{n}$ is tricky because $\hat H$ is in the exponent. However, we can do it if we use the Taylor-series expansion $e^x \approx 1 + x + \frac{1}{2!} x^2 + ...$.
+		
+			Fill in the blanks in the following derivation:
+			
+			\begin{align*}
+				\hat U(t)\ket{n} &= e^{-i\hat H t/\hbar}\\
+				&= \left(1 + \raisebox{-2ex}{\framebox(40,40){}} + \frac{1}{2!}\raisebox{-2ex}{\framebox(40,40){}}  + ...\right)\ket{n}\\
+				&= \left( \ket{n} + \left(\frac{-it}{\hbar}\right)\hat H^{\framebox(20,20){}}\ket{n} + \frac{1}{2!} \left(\frac{-it}{\hbar}\right)\hat H^{\framebox(20,20){}}\ket{n} + ...\right)\\
+				&= \left( \ket{n} + \left(\frac{-it}{\hbar}\right)\hat E_n^{\framebox(20,20){}}\ket{n} + \frac{1}{2!} \left(\frac{-it}{\hbar}\right)\hat E_n^{\framebox(20,20){}}\ket{n} + ...\right)\\
+				&= \left(1 + \raisebox{-2ex}{\framebox(40,40){}} + \frac{1}{2!}\raisebox{-2ex}{\framebox(40,40){}}  + ...\right)\ket{n}\\
+				&= e^{-i E_n t/\hbar}\ket{n}
+			\end{align*}
+			
+			\vspace{0.2in}
+			\begin{flushright}(Continued on back of page $\rightarrow$)	\end{flushright}
+		
+		\newpage
+		\question If we express $\ket{\Psi(t=0)}$ as a linear combination of energy eigenstates, e.g.
+			\begin{equation*}
+				\ket{\Psi(t=0)} = \sum_n c_n \ket{n}
+			\end{equation*}
+			then how would you find $\ket{\Psi(t=t_1)}$?
+			
+			\emph{(Hint: start by substituting this expression into $\ket{\Psi(t=t_1)} = \hat U(t_1)\ket{\Psi(t=0)}$, and note that you can move $\hat U(t_1)$ through the sum since it is a linear operator.)}
+	
+	\end{questions}

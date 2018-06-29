@@ -1,0 +1,46 @@
+\section*{Degenerate Perturbation Theory\sectionmark{Degenerate Perturbation Theory}}
+
+	As discussed in class, the approach described in the previous exercise fails when any of the zeroth-order states are degenerate. In this exercise, we'll consider how to transform our basis set to solve this problem.
+
+	\begin{questions}
+	
+		\question 
+		\begin{parts}
+			\part Suppose the states $\{\ket{i^{(0)}}\}$ are degenerate, i.e. $\hat H^{(0)}\ket{i^{(0)}} = E \ket{i^{(0)}}$ for all of the states with different $i$.
+			Calculate $H^{(0)}\ket{n^{(0)}}$, where $\ket{n^{(0)}}$ is a linear combination of these states, e.g. $\ket{n^{(0)}} = \sum_i c_{in}\ket{i^{(0)}}$. 
+			
+				\begin{solution}[5in]
+				\end{solution}
+			
+			\part Explain why your result means that we can change our basis to any linear combination of the degenerate eigenfunctions without changing the result of our calculation.
+			
+				\begin{solution}[1.5in]
+				\end{solution}
+			
+		\end{parts}
+		\newpage
+		
+		\question An ``easy'' solution to our degeneracy problem is to require that the numerator, $\braket{m^{(0)}|\hat H^{(1)}|n^{(0)}}$, equals zero whenever $n\neq m$.
+		
+			\begin{parts}
+			
+				\part Substitute $\ket{n^{(0)}} = \sum_i c_{in}\ket{i^{(0)}}$ and $\ket{m^{(0)}} = \sum_j c_{jm}\ket{j^{(0)}}$ into $\braket{m^{(0)}|\hat H^{(1)}|n^{(0)}}$ and simplify the expression until it is in terms of $c_{in}$, $c_{jm}$, and $H_{ji}^{(1)}$ (where $H_{ji}^{(1)} = \braket{j^{(0)}|\hat H^{(1)}|i^{(0)}}$ are the matrix elements of the perturbation Hamiltonian).
+				
+					\begin{solution}[3.5in]
+					\end{solution}
+				
+				\part Remembering that $c_{jm}^* = (\umat{c}^\dag)_{mj}$, how can you rewrite this expression using a matrix product?
+				
+					\begin{solution}[2in]
+					\end{solution}
+				
+				\part In order for $\braket{m^{(0)}|\hat H^{(1)}|n^{(0)}}$ to be nonzero when $n=m$ but zero otherwise, the resulting matrix must be a \emph{diagonal} matrix.
+				
+					Explain, in words, what this means about the matrix $\umat{c}$ containing the coefficients $c_{in}$.
+				
+					\begin{solution}[1in]
+					\end{solution}
+			
+			\end{parts}
+	
+	\end{questions}

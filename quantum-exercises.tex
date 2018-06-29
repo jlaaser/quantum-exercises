@@ -1,0 +1,89 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+%
+% The current source for these materials is accessible on Github: https://github.com/jlaaser/quantum-exercises
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\documentclass[answers,addpoints,11pt]{exam}
+\documentclass[addpoints,11pt]{exam}
+
+\usepackage{amsmath}
+\usepackage{braket}
+\usepackage{listings}
+\usepackage{graphicx}
+%\usepackage{minipage}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+
+\pagestyle{headandfoot}
+\firstpageheadrule
+\firstpagefootrule
+\runningheadrule
+\runningfootrule
+\firstpageheader{}{Exercise: \leftmark}{}
+\runningheader{}{Exercise: \leftmark}{}
+\firstpagefooter{\includegraphics[width=0.1\textwidth]{by-nc-sa} J. Laaser 2018}{}{Page \thepage\ of \numpages}
+\runningfooter{\includegraphics[width=0.1\textwidth]{by-nc-sa} J. Laaser 2018}{}{Page \thepage\ of \numpages}
+
+\newcommand{\exptval}[1]{\left< #1 \right>}
+\newcommand{\intallx}{\int_{-\infty}^{\infty}}
+\newcommand{\adag}{\hat a^\dag}
+\newcommand{\umat}[1]{\,\underline{\underline{#1}}}
+\newcommand{\uvec}[1]{\,\underline{#1}}
+\newcommand{\genpar}[3]{\frac{\partial^{#3}{#1}}{\partial {#2}^{#3}}}
+
+\newcommand{\contdnewpg}{\begin{flushright}(Continued on back of page $\rightarrow$)	\end{flushright}\newpage }
+%\newcommand{\pausenewpg}{\begin{flushright}(Pause here before going on $\rightarrow$)	\end{flushright}\newpage }
+\newcommand{\answerbox}[1]{\raisebox{-2ex}{\framebox(#1,30){}}}
+\newcommand{\answerboxtall}[1]{\raisebox{-4ex}{\framebox(#1,45){}}}
+
+
+\author{Jennifer Laaser}
+\title{In-Class Exercises for Quantum Chemistry}
+\date{\today}
+
+%% To output only one of the exercises, uncomment this line and replace the path with the path to the exercise you want to print:
+%\includeonly{includes/states-funcs-vecs}
+
+\begin{document}
+	
+\include{includes/titlepage}
+%\include{includes/about}
+\include{includes/states-funcs-vecs}
+\include{includes/operators}
+\include{includes/eigenfuns-eigenvals}
+\include{includes/wavefxns-probabilities}
+\include{includes/time-evolution}
+\include{includes/xp-eigenfuns-eigenvals}
+\include{includes/PIB}
+\include{includes/free-particle}
+\include{includes/tunneling}
+\include{includes/wavepackets}
+\include{includes/generalized-free-particle}
+\include{includes/HO-ladder-operators}
+\include{includes/HO-eigenstates}
+\include{includes/matrixmech-intro}
+\include{includes/matrixmech-eigenstates}
+\include{includes/angmomentum-commutation}
+\include{includes/angmomentum-ladder-operators}
+\include{includes/angmomentum-eigenvals}
+\include{includes/the-H-atom}
+\include{includes/the-He-atom}
+\include{includes/variational-principle}
+\include{includes/exchange-symmetry}
+\include{includes/HF-effective-potential}
+\include{includes/perturbation-first-order}
+\include{includes/perturbation-degenerate}
+
+	
+\end{document}
