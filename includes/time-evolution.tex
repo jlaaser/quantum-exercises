@@ -14,7 +14,7 @@
 	\end{equation*}
 	$\hat U(t)$ is given by 
 	\begin{equation*}
-		\hat U(t) = e^{i\hat H t/\hbar}
+		\hat U(t) = e^{-i\hat H t/\hbar}
 	\end{equation*}
 	where $\hat H$ is the Hamiltonian operator corresponding to the total energy of the system.
 	
@@ -39,10 +39,10 @@
 			Fill in the blanks in the following derivation:
 			
 			\begin{align*}
-				\hat U(t)\ket{n} &= e^{-i\hat H t/\hbar}\\
+				\hat U(t)\ket{n} &= e^{-i\hat H t/\hbar}\ket{n}\\
 				&= \left(1 + \raisebox{-2ex}{\framebox(40,40){}} + \frac{1}{2!}\raisebox{-2ex}{\framebox(40,40){}}  + ...\right)\ket{n}\\
-				&= \left( \ket{n} + \left(\frac{-it}{\hbar}\right)\hat H^{\framebox(20,20){}}\ket{n} + \frac{1}{2!} \left(\frac{-it}{\hbar}\right)\hat H^{\framebox(20,20){}}\ket{n} + ...\right)\\
-				&= \left( \ket{n} + \left(\frac{-it}{\hbar}\right)\hat E_n^{\framebox(20,20){}}\ket{n} + \frac{1}{2!} \left(\frac{-it}{\hbar}\right)\hat E_n^{\framebox(20,20){}}\ket{n} + ...\right)\\
+				&= \left( \ket{n} + \left(\frac{-it}{\hbar}\right)\hat H^{\framebox(20,20){}}\ket{n} + \frac{1}{2!} \left(\frac{-it}{\hbar}\right)^2\hat H^{\framebox(20,20){}}\ket{n} + ...\right)\\
+				&= \left( \ket{n} + \left(\frac{-it}{\hbar}\right) E_n^{\framebox(20,20){}}\ket{n} + \frac{1}{2!} \left(\frac{-it}{\hbar}\right)^2 E_n^{\framebox(20,20){}}\ket{n} + ...\right)\\
 				&= \left(1 + \raisebox{-2ex}{\framebox(40,40){}} + \frac{1}{2!}\raisebox{-2ex}{\framebox(40,40){}}  + ...\right)\ket{n}\\
 				&= e^{-i E_n t/\hbar}\ket{n}
 			\end{align*}
