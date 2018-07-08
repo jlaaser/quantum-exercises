@@ -17,7 +17,7 @@ The current source for these materials is accessible on Github: https://github.c
 General Notes
 ---------------------------------------------------------
 
- - In Class Exercises for Quantum Chemistry is intended for use in a graduate-level introductory course in quantum chemistry.  These exercises take a "states-first" approach to quantum chemistry
+ - In Class Exercises for Quantum Chemistry is intended for use in a graduate-level introductory course in quantum chemistry.  These exercises take a "states-first" approach to quantum chemistry.
  
  - Every effort has been made to correct outstanding errors in these materials. However, if you find an issue that needs to be fixed, please create an issue in the GitHub issue tracker for this project: https://github.com/jlaaser/quantum-exercises/issues
  
