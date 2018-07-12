@@ -1,4 +1,14 @@
-\section*{Eigenvalues, Eigenstates, and Eigenvectors\sectionmark{Eigenstates in Matrix Mechanics}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% (c) 2018 by Jennifer Laaser
+%
+% This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+%
+% The current source for these materials is accessible on Github: https://github.com/jlaaser/quantum-exercises
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Eigenvalues, Eigenstates, and Eigenvectors\sectionmark{Exercise: Eigenstates in Matrix Mechanics}}
 
 	In this set of exercises, we will think about how to express eigenvalue-eigenstate relationships using the matrix formalism.
 	
@@ -7,7 +17,7 @@
 		\begin{parts}
 			\part Using matrix notation, what needs to be true if $\ket\Psi = \sum_n c_n\ket n$ is an eigenstate of $\hat\Omega$ with eigenvalue $\omega$?
 		
-				\emph{Hint: in Dirac notation, we need $\hat\Omega \ket\Psi = \omega\ket\Psi$. What are the matrix-notation ``equivalents'' of $\hat\Omega$ and $\ket\Psi$?}
+				\emph{Hint: in Dirac notation, $\ket\Psi$ is an eigenstate of $\hat\Omega$ if $\hat\Omega \ket\Psi = \omega\ket\Psi$. What analogous expression do you get if you simply replace $\ket\Psi$ and $\hat\Omega$ by their matrix-notation equivalents?}
 			
 				\begin{solution}[2in]
 				\end{solution}
@@ -20,9 +30,9 @@
 			
 			\part Suppose we had a matrix $\umat\Omega$ containing the matrix elements of $\hat\Omega$ in some basis $\{\ket n\}$.
 			
-				Describe, in words, what steps you might take to find the vector $\uvec{c}$ that describes the eigenstate $\ket\Psi$ in terms of the $\{\ket n\}$ basis.
+				What steps could you take to find the eigenstates of $\hat\Omega$ in terms of the $\{\ket n\}$ basis?
 				
-				\begin{solution}[2.6in]
+				\begin{solution}[2.8in]
 				\end{solution}
 				
 				\contdnewpg
@@ -42,6 +52,20 @@
 					\begin{solution}[1.25in]
 					\end{solution}	
 				
-				\part Take your expression from part (b) and insert a complete set of $\{\ket n\}$ eigenstates at each ``$|$'' (remember to use different indices - $n$ for the first set of eigenstates and $m$ for the second!).  What does this tell you about how you might be able to use matrix multiplication to ``transform'' $\umat H$ from one basis to another?
+				\part If we take our expression from part (a) and insert a complete set of $\{\ket{i}\}$ eigenstates at each ``$\vert$'', we get
+				\begin{equation*}
+					H_{nm} = \sum_i \sum_j \braket{n|i} \braket{i|\hat H|j}\braket{j|m}
+				\end{equation*}
+				How would you interpret the $\braket{n|i}$ and $\braket{j|m}$ terms?
+				
+					\begin{solution}[1.5in]
+					\end{solution}
+				
+				\part If we compiled all of the $\braket{n|i}$ values in a matrix $\umat{S}$ with matrix elements $S_{ni} = \braket{n|i}$, what matrix expression could you use to calculate $\umat{H}_{\{\ket{n}\}}$ (the Hamiltonian in terms of the $\{\ket{n}\}$ eigenstates) from $\umat{H}_{\{\ket{i}\}}$ (the Hamiltonian in terms of the $\{\ket{i}\}$ states)?
+				
+					\begin{solution}[1.5in]
+					\end{solution}
 			\end{parts}
 	\end{questions}
+
+\stophere

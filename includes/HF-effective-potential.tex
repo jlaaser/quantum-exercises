@@ -1,9 +1,16 @@
-\section*{The Effective Potential in the Hartree Method\sectionmark{Hartree Method Effective Potential}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% (c) 2018 by Jennifer Laaser
+%
+% This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+%
+% The current source for these materials is accessible on Github: https://github.com/jlaaser/quantum-exercises
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{The Effective Potential in the Hartree Method\sectionmark{Exercise: Hartree Method Effective Potential}}
 	
-	In this exercise, we'll think about the physical meaning of the effective potential 
-			\begin{equation*}
-				V_{eff}(\vec{r_2}) = \int d\tau_1 \, \phi^*(1)\frac{e^2}{4\pi \epsilon_0 r_{12}} \phi(1)
-			\end{equation*}
+	In this exercise, we'll think about the physical meaning of the effective potential in the Hartree Method.
 
 	\begin{questions}
 	
@@ -12,12 +19,12 @@
 			\begin{parts}
 				\part What is the \emph{probability density} for this electron?
 				
-					\begin{solution}[2in]
+					\begin{solution}[2.25in]
 					\end{solution}
 				
 				\part What is the probability of finding the electron in a specific volume element $d\tau_1$ near position $\vec{r_1}$?
 				
-					\begin{solution}[2in]
+					\begin{solution}[2.25in]
 					\end{solution}
 				
 				\part On average, how much charge is in this volume element $d\tau_1$?  (Remember that a single electron has charge $e$.)
@@ -27,7 +34,7 @@
 				
 				\contdnewpg
 				
-				\part Suppose there is another electron (let's call it electron 2) at position $\vec{r_2}$.  What is the potential energy for the interaction between electron 2 and the piece of electron 1's charge in volume element $d\tau_1$ near position $\vec{r_1}$?
+				\part Suppose there is another electron (let's call it electron 2) at position $\vec{r_2}$.  What is the potential energy for the interaction between electron 2 and the little piece of electron 1's charge in volume element $d\tau_1$ near position $\vec{r_1}$?
 				
 					\begin{solution}[2in]
 					\end{solution}
@@ -36,10 +43,16 @@
 					\begin{solution}[2in]
 					\end{solution}
 				
-				\part Compare your answer to part (e) with the expression for $V_{eff}$ at the beginning of this exercise. Explain, in your own words, why we might say that $V_{eff}$ is the potential that electron 2 ``sees'' when it interacts only with the average charge distribution of electron 1.
+				\part Compare your answer to part (e) with the following expression for $V_{eff}$, the effective potential in the Hartree method:
+			\begin{equation*}
+				V_{eff}(\vec{r_2}) = \int d\tau_1 \, \phi^*(1)\frac{e^2}{4\pi \epsilon_0 r_{12}} \phi(1)
+			\end{equation*}
+			Explain, in your own words, why we might say that $V_{eff}$ is the potential that electron 2 ``sees'' when it interacts only with the average charge distribution of electron 1.
 				
 					\begin{solution}[3in]
 					\end{solution}
 			\end{parts}
 	
 \end{questions}
+
+\stophere

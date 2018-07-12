@@ -1,4 +1,14 @@
-\section*{Position and Momentum: Eigenfunctions and Operators\sectionmark{Position and Momentum}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% (c) 2018 by Jennifer Laaser
+%
+% This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+%
+% The current source for these materials is accessible on Github: https://github.com/jlaaser/quantum-exercises
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Position and Momentum: Eigenfunctions and Operators\sectionmark{Exercise: Position and Momentum}}
 
 	Two particularly useful operators in quantum mechanics are the position operator, $\hat x$, and the momentum operator, $\hat p$.
 	
@@ -10,20 +20,29 @@
 		\question An eigenstate of the position operator is one where the probability of finding the particle is nonzero at only one position.
 		
 			\begin{parts}
-				\part Predict what the position eigenfunction for a particle found at $x=x_0$ should look like:
+				\part Predict what the probability density for a particle found at $x=x_0$ should look like:
 				
 \vspace{0.5in}					\centerline{\includegraphics[width=0.5\textwidth]{includes/xp-eigenfuns-eigenvals-FIGURES/x0_axes}}		
 \vspace{0.3in}		
 				
-				\part The eigenvalue of this position eigenstate should be the particle's position, e.g. $x_0$. What operator might you be able to apply to extract the value of $x_0$?
+				\part The eigenvalue of this position eigenstate should be the particle's position, e.g. $x_0$. Which of the following operators would be most useful for extracting this eigenvalue?
 				
-					\begin{solution}[3.3in]
-					\end{solution}
+				\begin{align*}
+					\hat \Omega \psi(x) &= \psi(x) + x  && (\hat\Omega = \text{``add x'')}\\
+					\hat \Omega \psi(x) &= x\psi(x)&& (\hat\Omega = \text{``multiply by x'')}\\
+					\hat \Omega \psi(x) &= |\psi(x)|^2&& (\hat\Omega = \text{``square the function'')}\\
+					\hat \Omega \psi(x) &= \frac{d}{dx}\psi(x)  && (\hat\Omega = \text{``take the derivative'')}
+				\end{align*}
+				
+				Briefly explain your choice:
+				
+				\begin{solution}[1.5in]
+				\end{solution}
 			
 			\end{parts}
 			
 			
-		\begin{flushright}(Continued on back of page $\rightarrow$)	\end{flushright}
+		\contdnewpg
 		\newpage 
 		\item De Broglie told us that a particle with momentum $p$ has wavelength $\lambda = \frac{h}{p}$.
 		
@@ -41,8 +60,10 @@
 				
 				\part What operator might you be able to apply to the function $e^{ikx}$ to extract the momentum eigenvalue $p$?
 				
-					\begin{solution}[2in]
+					\begin{solution}[3in]
 					\end{solution}
 				
 			\end{parts}
 	\end{questions}
+	
+	\stophere
