@@ -1,6 +1,6 @@
 # quantum-exercises
-In-Class Exercises for Quantum Chemistry
-unreleased version - July 2018
+Guided Exercises for Quantum Chemistry
+v1.0.1 - August 2018
 
 ----------------------------------------------------------
 Copyright and License
@@ -17,7 +17,7 @@ The current source for these materials is accessible on Github: https://github.c
 General Notes
 ---------------------------------------------------------
 
- - In Class Exercises for Quantum Chemistry is intended for use in a graduate-level introductory course in quantum chemistry.  These exercises take a "states-first" approach to quantum chemistry.
+ - Guided Exercises for Quantum Chemistry is intended for use in a graduate-level introductory course in quantum chemistry.  These exercises take a "states-first" approach to quantum chemistry.
  
  - Every effort has been made to correct outstanding errors in these materials. However, if you find an issue that needs to be fixed, please create an issue in the GitHub issue tracker for this project: https://github.com/jlaaser/quantum-exercises/issues
  
@@ -38,7 +38,7 @@ Compiling the Exercises
    
    - To compile only a single exercise, uncomment the "\includeonly" statement before "\begin{document}" and update the file path to the path of the exercise you want to include. Then compile quantum-exercises.tex as normal. This will produce a PDF containing only the exercise listed in the \includeonly statement, without the title page.
    
-   - To compule a subset of the exercises, comment out (put a % sign in front of) the "\include" statements for any exercises that you want to omit from the output and then compile quantum-exercises.tex. This will result in a pdf including a title page and all exercises that were not commented out.
+   - To compile a subset of the exercises, comment out (put a % sign in front of) the "\include" statements for any exercises that you want to omit from the output and then compile quantum-exercises.tex. This will result in a pdf including a title page and all exercises that were not commented out.
 
  - Compiled PDFs off the full set of exercises will be uploaded with each official release; see https://github.com/jlaaser/quantum-exercises/releases
 
